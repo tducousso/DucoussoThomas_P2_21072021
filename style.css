@@ -1,0 +1,52 @@
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+.contenu1
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 80%;
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.item img {
+width: 100%;
+height: auto;
+}
+
+.contenu3
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 80%;
+}
+
+
+footer
+{
+    display: flex;
+    
+}
