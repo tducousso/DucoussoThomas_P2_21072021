@@ -1,52 +1,218 @@
-#bloc_page
+@font-face 
 {
-    width: 900px;
-    margin: auto;
+    font-family: 'ralewaythin';
+    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body 
+{
+    font-family: 'ralewaythin'; sans-serif;                        /* pb avec sans-serif */
+}
+#logo img
+{
+    width: 100px;
+    max-height: 100px;
+}
+ul
+{
+    list-style-type: none;
 }
 nav ul
 {
+    display: flex;                                          /* display : flex à mieu comprendre */
     list-style-type: none;
-    display: flex;
     position: absolute;
     right: 0px;
     top: 0px;
-
 }
-
-nav li
+nav ul a
 {
-    margin-right: 15px;
+    position: relative;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: #0065FC 2px solid;
 }
-.contenu1
+main div h1
 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    width: 80%;
+    margin-bottom: 15px;
 }
+h2 , h3
+{
+    font-weight: bold;                                       /* Bold/h1,h2,h3: marche pas cf font */
+}
+#map
+{
+    background-color: #f2f2f2;                             /* mon fond ne marche plus (pas tres important) */
+    border-radius: 10px;
+    position: absolute;
+    left: 15px;
 
-.item {
+}                                                            /* Cmt aligner sur la meme ligne (x2)*/
+#search
+{
+    margin-left: 45px;
+}
+button
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 10px 10px 0;
+    border:none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.fas
+{
+color: #0065FC;
+}
+.fa-map-marker-alt 
+{
+    color: black;
+}
+.lists_filters
+{
+    border-radius: 10px 10px 10px 10px;
+}
+.filters ul li
+{
+    display: inline; 
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+.stars
+{
+    display: inline-flex;
+}
+.grid                                                      /* obj: 1 tableau dans 1 tableau +1autre surment */
+{
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-column-gap: 30px;                                  
+}
+.content1
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F2F2F2;
+}
+.content2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F2F2F2;
+}
+aside
+{
+    grid-column: 2;
+}
+section img
+{
     width: 200px;
     height: 100px;
-    overflow: hidden;
+    object-fit: cover; /*qualité image */
 }
-
-.item img {
-width: 100%;
-height: auto;
-}
-
-.contenu3
+.content3 img
 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    width: 80%;
+    border-radius: 1rem 1rem 0 0;
 }
-
-
+.content3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;              /* alonger mes images ?? */
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-right: 60px;
+}
+.child1
+{
+    grid-column-start: 1;                       
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child1 img
+{
+    width: 100%;
+    height: 100%;
+}                                   /* PQ child4 img width & height 100% ne fait pas pareil que child1?! et je dois ajouter un grid-column*/
+.child4
+{
+    grid-column-start: 3;
+    grid-column-end: span 3;
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child4 img
+{
+    width: 100%;
+    height: 100%;
+}  
+.child2
+{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child3
+{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child5
+{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child6
+{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    border: solid 1px #d9d9d9;
+    border-radius: 1rem;
+}
+.child2 img                                /* pq .child2 img .child3 img .child5 img .child6 img sur la meme ligne ne fait pas pareil */
+{
+    width: 100%;
+}
+.child3 img 
+{
+    width: 100%;
+}
+.child5 img 
+{
+    width: 100%;
+}
+.child6 img 
+{
+    width: 100%;
+}
 footer
 {
-    display: flex;
-    
+    text-decoration: none;                                 /* marche pas */
+}
+.content_footer
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 200px;
+    display: flex; 
+    flex-direction: row;
+    background-color: #f2f2f2;
 }
