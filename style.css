@@ -8,12 +8,13 @@
 }
 body 
 {
-    font-family: 'ralewaythin'; sans-serif;                        /* pb avec sans-serif */
+    font-family: 'ralewaythin', sans-serif;                        
 }
 #logo img
 {
     width: 100px;
     max-height: 100px;
+    margin-left: 20px;
 }
 ul
 {
@@ -21,10 +22,10 @@ ul
 }
 nav ul
 {
-    display: flex;                                          /* display : flex à mieu comprendre */
+    display: flex;                                          
     list-style-type: none;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 0px;
 }
 nav ul a
@@ -41,30 +42,41 @@ main div h1
 }
 h2 , h3
 {
-    font-weight: bold;                                       /* Bold/h1,h2,h3: marche pas cf font */
+    display: flex;
+    font-weight: bold;                                       /* Bold/h1,h2,h3: marche pas cf font + modifier le display*/
 }
 #map
 {
-    background-color: #f2f2f2;                             /* mon fond ne marche plus (pas tres important) */
-    border-radius: 10px;
-    position: absolute;
-    left: 15px;
-
-}                                                            /* Cmt aligner sur la meme ligne (x2)*/
+    background-color: #f2f2f2;                             
+    padding: 20px ;
+    border-radius: 15px 0 0 15px;
+}                                                            
 #search
 {
-    margin-left: 45px;
+    display: inline-flex;
+}
+#search input
+{
+    padding: 15px;
+    border-left: #F2F2F2;
+    border-right: #F2F2F2;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
 }
 button
 {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 0 10px 10px 0;
     border:none;
     padding-left: 15px;
     padding-right: 15px;
+}
+section
+{
+    margin-top: 25px;
 }
 .fas
 {
@@ -76,21 +88,37 @@ color: #0065FC;
 }
 .lists_filters
 {
-    border-radius: 10px 10px 10px 10px;
+    display: flex; 
+    align-items: center;                          /* ca vient du titre */
 }
 .filters ul li
 {
-    display: inline; 
-    justify-content: center;
     font-weight: bold;
     margin-right: 20px;
-
+}
+.infob
+{
+    display: flex;
+    align-items: center;
+}
+.fa-info
+{
+    margin-right: 10px;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
 }
 .stars
 {
     display: inline-flex;
 }
-.grid                                                      /* obj: 1 tableau dans 1 tableau +1autre surment */
+.blocpage
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.grid                                                      
 {
     display: grid;
     grid-template-columns: 6fr 3fr;
@@ -100,50 +128,129 @@ color: #0065FC;
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25px 1fr 1fr 15px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
     background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "e f g"
+    "h h h"
+}
+.fa-chart-line
+{
+    float: right;                                   /* utilisation de float et position; pas le plus opti je pense */
+    padding-right: 20px;
+    position: relative;
+    bottom: 40px;
+}
+.Accomodation
+{
+    grid-area: a;
+    grid-column: 1 /span 3;
+    flex-wrap: nowrap;
+    margin: 0%;
+}
+.item1
+{
+    grid-area: b;
+}   
+.item2
+{
+    grid-area: c;
+}
+.item3
+{
+    grid-area: d;
+}
+.item4
+{
+    grid-area: e;
+}
+.item5
+{
+    grid-area: f;
+}
+.item6
+{
+    grid-area: g;  
+}
+.item1, .item2, .item3, .item4, .item5, .item6
+{
+    box-shadow: 0 0 16px #0000002e;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 5px;}
+.show_more
+{
+    grid-area: h;
+    text-decoration: none;
+    margin: 0%;
+}
+.content1 img
+{
+    border-radius: 1rem 1rem 0 0;    
+}
+aside
+{
+    grid-column: 2;
+}
+.Activities
+{
+    margin-bottom: 15px;
+    margin-top: 50px;
 }
 .content2
 {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #F2F2F2;
+    border-radius: 1.5rem;
 }
-aside
+.content2 img
 {
-    grid-column: 2;
+    max-width: 33%;
+    width: 33%;  
 }
 section img
 {
-    width: 200px;
-    height: 100px;
+    height: 100px;  /* a revoir a la fin! */
     object-fit: cover; /*qualité image */
+    max-width: 100%;
+    width: 100%;
 }
 .content3 img
 {
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0;                      
 }
 .content3
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;              /* alonger mes images ?? */
+    display: grid;                                    /* div au dessus de l'image + class*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;              
     column-gap: 2rem;
     row-gap: 2rem;
     margin-right: 60px;
 }
-.child1
+.content3 h3
 {
+    margin-left: 15px;
+    
+}
+.child1
+{                                            /* Alonger un peu plus mes photos sans que ca déborde */
     grid-column-start: 1;                       
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 2;
-    border: solid 1px #d9d9d9;
-    border-radius: 1rem;
 }
 .child1 img
 {
     width: 100%;
     height: 100%;
-}                                   /* PQ child4 img width & height 100% ne fait pas pareil que child1?! et je dois ajouter un grid-column*/
+}                                  
 .child4
 {
     grid-column-start: 3;
@@ -151,8 +258,6 @@ section img
     grid-column: 3;
     grid-row-start: 1;
     grid-row-end: span 2;
-    border: solid 1px #d9d9d9;
-    border-radius: 1rem;
 }
 .child4 img
 {
@@ -163,49 +268,38 @@ section img
 {
     grid-column-start: 2;
     grid-row-start: 1;
-    border: solid 1px #d9d9d9;
-    border-radius: 1rem;
 }
 .child3
 {
     grid-column-start: 2;
     grid-row-start: 2;
-    border: solid 1px #d9d9d9;
-    border-radius: 1rem;
 }
 .child5
 {
     grid-column-start: 4;
     grid-row-start: 1;
-    border: solid 1px #d9d9d9;
-    border-radius: 1rem;
 }
 .child6
 {
     grid-column-start: 4;
     grid-row-start: 2;
-    border: solid 1px #d9d9d9;
+}
+.child1, .child2, .child3, .child4, .child5, .child6
+{
+    box-shadow: 0 0 20px #0000002e;         
     border-radius: 1rem;
 }
-.child2 img                                /* pq .child2 img .child3 img .child5 img .child6 img sur la meme ligne ne fait pas pareil */
-{
-    width: 100%;
-}
-.child3 img 
-{
-    width: 100%;
-}
-.child5 img 
-{
-    width: 100%;
-}
-.child6 img 
+.child2 img , .child3 img , .child5 img , .child6 img     
 {
     width: 100%;
 }
 footer
 {
-    text-decoration: none;                                 /* marche pas */
+    margin-top: 40px;
+}
+.content_footer li a
+{
+    text-decoration: none;                              
 }
 .content_footer
 {
