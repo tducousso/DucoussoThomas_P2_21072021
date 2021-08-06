@@ -7,6 +7,7 @@ body
     width: 100px;
     max-height: 100px;
     margin-left: 80px;
+    padding-top: 10px;
 }
 ul
 {
@@ -14,11 +15,11 @@ ul
 }
 nav ul
 {
-    display: flex;                                          
+    display: flex;                                        
     list-style-type: none;
     position: absolute;
     right: 80px;
-    top: 0px;
+    top: 20px;
 }
 nav ul a
 {
@@ -30,17 +31,21 @@ nav ul a
 .nav_title1
 {
     color: #0065FC;
-    border-top: #0065FC 2px solid;
+    border-top: #0065FC 3px solid;
+    padding-top: 33px;
 }
 .nav_title2 
 {
     color: black;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .nav_title3
 {
     color: #0065FC;
     font-weight: bold;
 }
+
 .blocpage
 {
     margin-left: 80px;
@@ -48,8 +53,13 @@ nav ul a
 }
 main div h1
 {
-    margin-bottom: -5px;
     font-size: 26px;
+}
+.first_title
+{
+    line-height: 15px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 h2 , h3
 {
@@ -59,7 +69,7 @@ h2 , h3
 #map
 {
     background-color: #f2f2f2;                             
-    padding: 20px ;
+    padding: 17px ;
     border-radius: 15px 0 0 15px;
 }                                                            
 #search
@@ -102,6 +112,7 @@ color: #0065FC;
 .fa-map-marker-alt 
 {
     color: black;
+    font-size: 115%;
 }
 .lists_filters
 {
@@ -109,7 +120,11 @@ color: #0065FC;
     align-items: center;
     flex-wrap: wrap; 
 }
-.filters ul li                                      /* HOVER SUR FILTRES */
+.hover:hover
+{
+    background-color: rgba(35, 84, 245, 0.74) ;
+}
+.filters ul li                                      
 {
     font-weight: bold;
     margin-right: 20px;
@@ -142,6 +157,7 @@ color: #0065FC;
 .stars
 {
     display: inline-flex;
+    font-size: 90%;
 }
 .grid                                                      
 {
@@ -154,6 +170,7 @@ section img
     height: 100px; 
     object-fit: cover; /*qualité image */
 }
+
 .content1
 {
     display: grid;
@@ -161,7 +178,7 @@ section img
     grid-template-rows: 25px 1fr 1fr 15px;
     column-gap: 2rem;
     row-gap: 2rem;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     margin: auto;
@@ -238,21 +255,37 @@ aside
 {
     grid-column: 2;
 }
-.Activities
+.chart
 {
-    margin-bottom: 15px;
-    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
 }
-.content2
+.fa-chart-line
 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr 1fr;
-    row-gap: 2rem;
+    color: black;
+    padding-right: 50px;
+    font-size: 150%;
+}
+aside
+{
     background-color: #F2F2F2;                       
     border-radius: 1.5rem;
-    padding: 2rem;
-    height: 500px;
+}
+
+.content2
+{
+    padding-left: 40px;
+}
+.item7, .item8, .item9
+{
+    display: inline-flex;
+    box-shadow: 0 0 16px #0000002e;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 20px;
+    width: 90%;
 }
 .content2 img
 {
@@ -271,51 +304,31 @@ aside
 {
     line-height: 2px;
     font-size: 90%;
-}
-.chart
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-row: 1;
-    grid-column: span 2;
-}
-.fa-chart-line
-{
-    color: black;
-}
-.item7                           
-{
-    grid-row: 2;
-}
-.item8
-{
-    grid-row: 3;
-}
-.item9
-{
-    grid-row: 4;
+    width: 300px;
 }
 .item7 img, .item8 img, .item9 img
 {
-    box-shadow: 0 0 16px #0000002e;
     padding: 5px;
-    margin: auto;
+    width: 35%;
+    height: 135px;
 }
-.legend2_1, .legend2_2, .legend2_3
+.item9 img
 {
-    box-shadow: 0 0 16px #0000002e;
-    background-color: white;
-    border-radius: 1rem;
-    padding-left: 10px;
+    width: 48%;
 }
+.stars2
+{
+    display: inline-flex;
+    font-size: 80%;
+}
+
 .content3
 {
     display: grid;                                    
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;            
-    column-gap: 2rem;
-    row-gap: 2rem;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
     height: 500px;
     grid-template-areas: 
     "l o q r"
@@ -325,13 +338,19 @@ aside
     "l p q s"
     "l p q s"
 }
+.Activities
+{
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
 .content3 img
 {
     border-radius: 1rem 1rem 0 0;                      
 }
 .content3 h3
 {
-    margin-left: 15px;  
+    margin-left: 20px;  
+    margin-top: 15px;
 }
 .child1
 {                                            
@@ -355,9 +374,17 @@ aside
 {
     grid-area: o;
 }
+.child2 img
+{
+    height: 230px;
+}
 .child3
 {
     grid-area: p;
+}
+.child3 img
+{
+    height: 127px;
 }
 .child5
 {
@@ -366,6 +393,10 @@ aside
 .child6
 {
     grid-area: s;
+}
+.child5 img, .child6 img
+{
+    height: 180px;
 }
 .child1, .child2, .child3, .child4, .child5, .child6
 {
@@ -385,6 +416,10 @@ aside
 {
     height: 100%;
     margin: 0;
+}
+.child2 h3, .child3 h3, .child5 h3, .child6 h3
+{
+    margin-top: 10px;
 }
 footer
 {
