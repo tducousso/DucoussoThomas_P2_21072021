@@ -4,10 +4,10 @@ body
 }
 #logo img
 {
-    width: 100px;
-    max-height: 100px;
-    margin-left: 80px;
-    padding-top: 10px;
+    width: 6.25rem;
+    max-height: 6.25rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
 }
 ul
 {
@@ -18,13 +18,13 @@ nav ul
     display: flex;                                        
     list-style-type: none;
     position: absolute;
-    right: 80px;
-    top: 20px;
+    right: 5rem;
+    top: 1.25rem;
 }
 nav ul a
 {
     position: relative;
-    margin-right: 30px;
+    margin-right: 1.875rem;
     text-decoration: none;
     font-weight: 500;
 }
@@ -32,13 +32,13 @@ nav ul a
 {
     color: #0065FC;
     border-top: #0065FC 3px solid;
-    padding-top: 33px;
+    padding-top: 2.0625rem;
 }
 .nav_title2 
 {
     color: black;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 }
 .nav_title3
 {
@@ -48,39 +48,40 @@ nav ul a
 
 .blocpage
 {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 main div h1
 {
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 .first_title
 {
-    line-height: 15px;
-    padding-top: 25px;
-    padding-bottom: 10px;
+    line-height: 1.25rem;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
 }
 h2 , h3
 {
     display: inline-flex;
-    font-weight: bold;                                       
+    font-weight: bold; 
+    align-items: center;                                      
 }
 #map
 {
     background-color: #f2f2f2;                             
-    padding: 17px ;
-    border-radius: 15px 0 0 15px;
+    padding: 1rem ;
+    border-radius: 1rem 0 0 1rem;
 }                                                            
 #search
 {
     display: inline-flex;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 #search input
 {
     font-weight: bold;
-    padding: 15px;
+    padding: 1rem;
     border-left: #F2F2F2;
     border-right: #F2F2F2;
     border-top: solid 1px #F2F2F2;
@@ -90,15 +91,15 @@ button
 {
     background-color: #0065FC;
     color: white;
-    font-size: 20px;
-    border-radius: 0 15px 15px 0;
+    font-size: 1.25rem;
+    border-radius: 0 1rem 1rem 0;
     border:none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 section
 {
-    margin-top: 25px;
+    margin-top: 1.625rem;
 }
 section a
 {
@@ -114,6 +115,10 @@ color: #0065FC;
     color: black;
     font-size: 115%;
 }
+.filters h3
+{
+    font-size: 1.25rem;
+}
 .lists_filters
 {
     display: inline-flex;      
@@ -127,19 +132,19 @@ color: #0065FC;
 .filters ul li                                      
 {
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
-    padding-right: 15px;
+    padding-right: 1rem;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     margin-left: -2px;
     border: solid 1px #d9d9d9;
     background-color: #DEEBFF;
     border-radius: 100%;
-    padding: 15px;
+    padding: 1rem;
 }
 .infob
 {
@@ -148,26 +153,31 @@ color: #0065FC;
 }
 .fa-info
 {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
-    padding: 5px 10px 5px 10px;
-    font-size: 15px;
+    padding: 0.375rem 0.625rem 0.375rem 0.625rem;
+    font-size: 1rem;
 }
 .stars
 {
     display: inline-flex;
     font-size: 90%;
+    margin-left: 0.75rem;
+}
+.grey_star
+{
+    color: #d9d9d9;
 }
 .grid                                                      
 {
     display: grid;
     grid-template-columns: 6fr 3fr;
-    grid-column-gap: 30px;                                  
+    grid-column-gap: 3.125rem;                                 
 }
 section img
 {
-    height: 100px; 
+    height: 6.25rem; 
     object-fit: cover; /*qualité image */
 }
 
@@ -175,10 +185,10 @@ section img
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25px 1fr 1fr 15px;
+    grid-template-rows: 1.625rem 1fr 1fr 1rem;
     column-gap: 2rem;
     row-gap: 2rem;
-    padding: 2.5rem;
+    padding: 3.2rem;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     margin: auto;
@@ -222,10 +232,10 @@ section img
 }
 .item1, .item2, .item3, .item4, .item5, .item6
 {
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
     background-color: white;
     border-radius: 1rem;
-    padding: 5px;
+    padding: 0.375rem;
 }
 .show_more
 {
@@ -241,15 +251,20 @@ section img
 }
 .legend
 {
-    line-height: 2px;
-    margin-left: 10px;
-    margin-right: 10px;
     font-size: 90%;
+}
+.content1 h3
+{
+    margin: 0.33rem 0.75rem 0.25rem 0.75rem;
+}
+.nightly_price
+{
+    margin: 0.33rem 0.75rem 0.25rem 0.75rem;
 }
 .hotel_name
 {
     display: block;
-    line-height: 15px; 
+    line-height: 1rem; 
 }
 aside
 {
@@ -260,12 +275,13 @@ aside
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 1rem;
+    line-height: 0.375rem;
 }
 .fa-chart-line
 {
     color: black;
-    padding-right: 50px;
+    padding-right: 3.125rem;
     font-size: 150%;
 }
 aside
@@ -276,41 +292,53 @@ aside
 
 .content2
 {
-    padding-left: 40px;
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
 }
 .item7, .item8, .item9
 {
     display: inline-flex;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
     background-color: white;
     border-radius: 1rem;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     width: 90%;
 }
 .content2 img
 {
     border-radius: 1rem 0 0 1rem;
 }
-.legend2_1
+.hotel_name2
 {
-    line-height: 2px;
-    font-size: 90%;
+    margin-left: 0.625rem;
+    margin-bottom: 0.375rem;
 }
-.legend2_2
+.hotel_name3
 {
-    font-size: 90%;
+    margin-left: 0.625rem;
+}
+.nightly_price2
+{
+    margin: 0rem 0rem 3.3rem 0.625rem;
+}
+.nightly_price3
+{
+    margin: -0.75rem 0rem 2rem 0.625rem;   
 }
 .legend2_3
 {
-    line-height: 2px;
-    font-size: 90%;
     width: 300px;
+}
+.legend2_1, .legend2_2, .legend2_3
+{
+    font-size: 90%;
 }
 .item7 img, .item8 img, .item9 img
 {
-    padding: 5px;
+    padding: 0.375rem;
     width: 35%;
-    height: 135px;
+    height: 8.5rem;
 }
 .item9 img
 {
@@ -320,6 +348,7 @@ aside
 {
     display: inline-flex;
     font-size: 80%;
+    margin-left: 0.625rem;
 }
 
 .content3
@@ -329,7 +358,7 @@ aside
     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;            
     column-gap: 2.5rem;
     row-gap: 2.5rem;
-    height: 500px;
+    height: 31.25rem;
     grid-template-areas: 
     "l o q r"
     "l o q r"
@@ -340,8 +369,8 @@ aside
 }
 .Activities
 {
-    margin-bottom: 15px;
-    margin-top: 60px;
+    margin-bottom: 1rem;
+    margin-top: 3.75rem;
 }
 .content3 img
 {
@@ -349,8 +378,8 @@ aside
 }
 .content3 h3
 {
-    margin-left: 20px;  
-    margin-top: 15px;
+    margin-left: 1.25rem;  
+    margin-top: 1rem;
 }
 .child1
 {                                            
@@ -376,7 +405,7 @@ aside
 }
 .child2 img
 {
-    height: 230px;
+    height: 14.375rem;
 }
 .child3
 {
@@ -384,7 +413,7 @@ aside
 }
 .child3 img
 {
-    height: 127px;
+    height: 8rem;
 }
 .child5
 {
@@ -396,11 +425,11 @@ aside
 }
 .child5 img, .child6 img
 {
-    height: 180px;
+    height: 11.25rem;
 }
 .child1, .child2, .child3, .child4, .child5, .child6
 {
-    box-shadow: 0 0 20px #0000002e;         
+    box-shadow: 0 0 1.25rem #0000002e;         
     border-radius: 1rem;
     height: 100%;
 }
@@ -419,17 +448,17 @@ aside
 }
 .child2 h3, .child3 h3, .child5 h3, .child6 h3
 {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 footer
 {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 footer h3
 {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 .content_footer li a
 {
@@ -440,16 +469,17 @@ footer h3
 .content_footer li a, footer h3
 {
     position: relative;
-    bottom: 25px;
-    left: 10px;
+    bottom: 1.5rem;
 }
 .content_footer
 {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-column-gap: 200px;
+    grid-column-gap: 14rem;
     display: flex; 
     background-color: #f2f2f2;
-    padding-top: 60px;
-    margin: 40px;
+    padding-top: 3.75rem;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
