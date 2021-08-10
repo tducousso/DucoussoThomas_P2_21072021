@@ -1,0 +1,25 @@
+<script src="https://kit.fontawesome.com/0e5c66eebd.js" crossorigin="anonymous"></script>
+
+Star
+<i class="fas fa-star"></i> 
+
+Map marker
+<i class="fas fa-map-marker-alt"></i>
+
+Info 
+<i class="fas fa-info"></i>
+
+Chart line
+<i class="fas fa-chart-line"></i>
+
+Money
+<i class="fas fa-money-bill-wave"></i>
+
+Child
+<i class="fas fa-child"></i>
+
+Heart
+<i class="fas fa-heart"></i>
+
+Dog
+<i class="fas fa-dog"></i>
