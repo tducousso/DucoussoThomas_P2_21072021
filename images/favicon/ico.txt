@@ -6,6 +6,9 @@ Star
 Map marker
 <i class="fas fa-map-marker-alt"></i>
 
+Search
+<i class="fas fa-search"></i>
+
 Info 
 <i class="fas fa-info"></i>
 
