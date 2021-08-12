@@ -4,6 +4,7 @@ body
     margin: 0;                        
 }
 
+/* <-- Navbar --> */
 header
 {
     margin-right: 2.5rem;
@@ -49,7 +50,13 @@ nav .nav_title1, nav .nav_title2, nav .nav_title3
 {
     color: black;
     grid-area: y;
+    border-top: #F2F2F2 3px solid;
     font-weight: 500;
+}
+.nav_title2:hover
+{
+    color: #0065FC;
+    border-top: #0065FC 3px solid;
 }
 .nav_title3
 {
@@ -58,6 +65,7 @@ nav .nav_title1, nav .nav_title2, nav .nav_title3
     grid-area: z;
 }
 
+/* <-- Research + filters --> */
 #blocpage
 {
     margin-left: 2.5rem;
@@ -105,12 +113,22 @@ button
     color: white;
     font-size: 1.25rem;
     border-radius: 0 1rem 1rem 0;
-    border:none;
+    border: none;
     padding: 0 1.25rem;
 }
 .responsive_icon
 {
     display: none;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    padding: 0 1.25rem;
+}
+.fa-search::before
+{
+    color: white;
+    font-size: 85%;
 }
 section
 {
@@ -185,6 +203,8 @@ section a
 {
     color: #d9d9d9;
 }
+
+/* <-- Accomodation --> */
 #grid                                                      
 {
     display: grid;
@@ -282,6 +302,8 @@ section img
     display: block;
     line-height: 1rem; 
 }
+
+/* <-- Most view (accomodation) --> */
 aside
 {
     grid-column: 2;
@@ -367,6 +389,7 @@ aside
     margin-left: 0.625rem;
 }
 
+/* <-- Activities --> */
 .content3
 {
     display: grid;                                    
@@ -466,6 +489,8 @@ aside
 {
     margin-top: 0.625rem;
 }
+
+/* <-- Footer (about us / support...) --> */
 footer
 {
     margin-top: 3.125rem;
@@ -501,8 +526,158 @@ footer h3
 }
 
 
-/* Media Queries */
+/* <-- Media Queries --> */
 
 
 @media screen and (max-width: 1440px) {
+    .item1 h3
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .legend3 {
+        height: 95%;
+    }
+    .nightly_price2 {
+        margin: 0rem 0rem 2.1rem 0.625rem;
+    } 
+}    
+
+@media screen and (max-width: 1280px) {
+    .first_title {
+        line-height: normal;
+    }
+    .lists_filters {
+        row-gap: 0.5rem;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 6fr;
+        grid-gap: 2rem;
+    }
+    aside {
+        grid-area: 1;
+
+    }
+    .item9 img {
+        width: 35%;
+    }
+    .Accomodation {
+        padding-top: 3rem;
+    }
+    .content1 {
+        grid-area: 2;
+        margin-top: 2rem;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        width: 98%;
+    }
+    section img {
+        height: 14rem;
+    }
+    .item1, .item2, .item3, .item4, .item5, .item6 {
+        margin-top: 1rem;
+        width: 100%;
+    }     
+    #show_more {
+        margin-left: 1rem;
+    }
+    .content2 {
+        padding-left: 3.5rem;
+        padding-bottom: 2rem;
+    }
+    .content3 {
+        display: contents;
+    } 
+    .child1, .child2, .child3, .child4, .child5, .child6 {
+        margin-bottom: 2rem;
+    }
+    .child1 img, .child2 img, .child3 img, .child4 img, .child5 img, .child6 img {
+        height: 14rem;
+    }
+    .content_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+}        
+
+@media screen and (max-width: 768px) {
+    #grid {
+        grid-gap: 0;
+    }
+    .content1 {
+        display: block;
+    }
+    #show_more {
+        margin: 1rem;
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #blocpage {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .logo {
+        margin-top: 0; 
+        margin-left: 1.5rem;
+    }
+    nav {
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "logo z"
+        "x y";
+    }
+    .nav_title1 {
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+    }
+    .nav_title2 {
+        border-top: none;
+        border-bottom: #F2F2F2 3px solid;
+    }
+    .nav_title2:hover {
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+
+    }
+    button {
+        display: none;
+    }
+    .responsive_icon {
+        display: flex;
+        padding-top: 0.875rem;
+    }
+    .search input {
+        width: 20rem;
+    }
+    .content2 {
+        padding-left: 2.5rem;
+    }
+    aside {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        border-radius: 0;
+    }
+        .item7, .item8, .item9 {
+        width: 98%;
+    }
+}   
+
+@media screen and (max-width: 400px) {
+    .lists_filters {
+        padding: 0;
+    }
+    .filters ul li {
+        margin-right: 0;
+    }
+}
+
+/* 
     
+*/
+
+/* Barre search qui se rétrécit  */
+
