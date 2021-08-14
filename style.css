@@ -40,11 +40,15 @@ nav .nav_title1, nav .nav_title2, nav .nav_title3
 }
 .nav_title1
 {
-    color: #0065FC;
+    color: black;
     grid-area: x;
-    border-top: #0065FC 3px solid;
-    padding-top: 2.25rem;
+    border-top: #F2F2F2 3px solid;
     font-weight: 500;
+}
+.nav_title1:hover
+{
+    color: #0065FC;
+    border-top: #0065FC 3px solid;
 }
 .nav_title2 
 {
@@ -235,7 +239,7 @@ section img
     "e f g"
     "h h h"
 }
-.Accomodation
+#accomodation
 {
     grid-area: a;
     grid-column: 1 /span 3;
@@ -377,10 +381,7 @@ aside
     padding: 0.375rem;
     width: 35%;
     height: 8.5rem;
-}
-.item9 img
-{
-    width: 48%;
+    min-width: 35%;
 }
 .stars2
 {
@@ -406,7 +407,7 @@ aside
     "l p q s"
     "l p q s"
 }
-.Activities
+#activities
 {
     margin-bottom: 1rem;
     margin-top: 2.5rem;
@@ -558,14 +559,7 @@ footer h3
     aside {
         grid-area: 1;
     }
-    .item1 h3
-    {
-        margin: 0.33rem 0.75rem 0.25rem 0.75rem;
-    }
-    .item9 img {
-        width: 35%;
-    }
-    .Accomodation {
+    #accomodation {
         padding-top: 3rem;
     }
     .content1 {
@@ -612,11 +606,15 @@ footer h3
     .content1 {
         display: block;
     }
+    .item1 h3
+    {
+        margin: 0.33rem 0.75rem 0.25rem 0.75rem;
+    }
     #show_more {
         margin: 1rem;
         padding-top: 0.5rem;
     }
-    .Activities {
+    #activities {
         margin-top: 0.75rem;
     }
     .legend2_3 {
@@ -644,15 +642,11 @@ footer h3
         "x y";
         margin-left: 0;
     }
-    .nav_title1 {
-        border-top: none;
-        border-bottom: #0065FC 3px solid;
-    }
-    .nav_title2 {
+    .nav_title1, .nav_title2 {
         border-top: none;
         border-bottom: #F2F2F2 3px solid;
     }
-    .nav_title2:hover {
+    .nav_title1:hover, .nav_title2:hover {
         border-top: none;
         border-bottom: #0065FC 3px solid;
     }
@@ -715,16 +709,3 @@ footer h3
         margin-left: 3rem;
     }
 }
-
-/* 
-    >>> A 390px, 3eme photo de most view rétrécit
-
-
-    
-    transition-duration: 0.5s; ??? scroll-behavior: smooth? ( pas ouf )
-
-    En dessous de 320 px de largeur >>> useless
-
-    Mardi 18 ou Mercredi 19 matin soutenance?!
-*/
-
