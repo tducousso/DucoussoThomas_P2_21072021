@@ -23,7 +23,7 @@ nav
     grid-template-areas:
     "logo . x y z"
 }
-nav .nav_title1, nav .nav_title2, nav .nav_title3
+nav .nav_tt
 {
     display: flex;
     justify-content: center;
@@ -119,6 +119,7 @@ button
     border-radius: 0 1rem 1rem 0;
     border: none;
     padding: 0 1.25rem;
+    cursor: pointer;
 }
 .responsive_icon
 {
@@ -162,6 +163,7 @@ section a
     display: inline-flex;      
     align-items: center;
     flex-wrap: wrap; 
+    cursor: pointer;
 }
 .hover:hover
 {
@@ -270,7 +272,7 @@ section img
 {
     grid-area: g;  
 }
-.item1, .item2, .item3, .item4, .item5, .item6
+.item_accomodation
 {
     box-shadow: 0 0 1rem #0000002e;
     background-color: white;
@@ -338,7 +340,7 @@ aside
     padding-left: 2.5rem;
     padding-bottom: 1rem;
 }
-.item7, .item8, .item9
+.item_most_view
 {
     display: inline-flex;
     box-shadow: 0 0 1rem #0000002e;
@@ -376,7 +378,7 @@ aside
 {
     font-size: 90%;
 }
-.item7 img, .item8 img, .item9 img
+.item_most_view img
 {
     padding: 0.375rem;
     width: 35%;
@@ -467,7 +469,7 @@ aside
 {
     height: 11.25rem;
 }
-.child1, .child2, .child3, .child4, .child5, .child6
+.child_activities
 {
     box-shadow: 0 0 1.25rem #0000002e;         
     border-radius: 1rem;
@@ -573,7 +575,7 @@ footer h3
     section img {
         height: 14rem;
     }
-    .item1, .item2, .item3, .item4, .item5, .item6 {
+    .item_accomodation {
         margin-top: 1rem;
         width: 100%;
     }     
@@ -587,10 +589,10 @@ footer h3
     .content3 {
         display: contents;
     } 
-    .child1, .child2, .child3, .child4, .child5, .child6 {
+    .child_activities {
         margin-bottom: 2rem;
     }
-    .child1 img, .child2 img, .child3 img, .child4 img, .child5 img, .child6 img {
+    .child_activities img {
         height: 14rem;
     }
     .content_footer {
@@ -653,7 +655,7 @@ footer h3
     .nav_title3 {
         margin-left: 6rem;
     }
-    nav .nav_title1, nav .nav_title2, nav .nav_title3 {
+    nav .nav_tt {
         padding: 1.625rem 0;
     }
     button {
@@ -677,13 +679,13 @@ footer h3
         margin-right: -1.5rem;
         border-radius: 0;
     }
-    .item7, .item8, .item9 {
+    .item_most_view {
         width: 98%;
     }
     section img {
         height: 7rem;
     }    
-    .child1 img, .child2 img, .child3 img, .child4 img, .child5 img, .child6 img {
+    .child_activities img {
         height: 8rem;
     } 
 }   
