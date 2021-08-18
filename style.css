@@ -205,7 +205,7 @@ section a
 section img
 {
     height: 6.25rem; 
-    object-fit: cover; /*qualité image */
+    object-fit: cover;  /* qualité image */
 }
 .content1
 {
